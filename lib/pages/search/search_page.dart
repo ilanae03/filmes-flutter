@@ -26,7 +26,7 @@ class _SearchPageState extends State<SearchPage> {
         _searchResults = result.movies;
       });
     } catch (e) {
-      print('Erro ao pesquisar filmes: $e'); // Verifique o console para mensagens de erro
+      print('Erro ao pesquisar filmes: $e'); 
     } finally {
       setState(() {
         _isLoading = false;
@@ -81,7 +81,7 @@ class _SearchPageState extends State<SearchPage> {
                           '$imageUrl${movie.posterPath}',
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
-                            print('Erro ao carregar imagem: $error'); // Verifique o console para erros de imagem
+                            print('Erro ao carregar imagem: $error'); 
                             return const Icon(Icons.broken_image, size: 50);
                           },
                         ),

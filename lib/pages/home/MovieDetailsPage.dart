@@ -13,7 +13,7 @@ class MovieDetailsPage extends StatefulWidget {
 }
 
 class _MovieDetailsPageState extends State<MovieDetailsPage> {
-  int _userRating = 0; // A nota do usuário será um número inteiro de 0 a 5
+  int _userRating = 0; 
   bool _liked = false;
   bool _disliked = false;
 
@@ -110,7 +110,6 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
             ),
             const SizedBox(height: 20),
 
-            // Seção de avaliação com estrelas
             const Text(
               'Rate this movie:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -124,14 +123,13 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
                     color: Colors.amber,
                   ),
                   onPressed: () {
-                    _rateMovie(index + 1); // Avaliação vai de 1 a 5
+                    _rateMovie(index + 1); 
                   },
                 );
               }),
             ),
             const SizedBox(height: 20),
 
-            // Seção de like/dislike
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

@@ -36,8 +36,7 @@ class MyApp extends StatelessWidget {
         '/movie_details': (context) {
           final Movie movie = ModalRoute.of(context)!.settings.arguments as Movie;
           return MovieDetailsPage(movie: movie);
-        },
-        // Adicione outras rotas conforme necessário
+        }
       },
     );
   }
